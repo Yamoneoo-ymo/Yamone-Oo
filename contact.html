@@ -1,26 +1,119 @@
-
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
     <title>Contact</title>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:Arial, sans-serif;
+        }
+
+        body{
+            height:100vh;
+            background:linear-gradient(120deg,#f9b233,#f25c54);
+            display:flex;
+            justify-content:center;
+            align-items:center;
+        }
+
+        .card{
+            background:rgba(255,255,255,0.15);
+            padding:40px;
+            width:380px;
+            border-radius:15px;
+            text-align:center;
+            color:white;
+            box-shadow:0 10px 30px rgba(0,0,0,0.25);
+        }
+
+        h1{
+            margin-bottom:20px;
+            font-size:28px;
+        }
+
+        form{
+            text-align:left;
+            margin-bottom:20px;
+        }
+
+        label{
+            font-size:14px;
+            display:block;
+            margin-bottom:5px;
+        }
+
+        input, textarea{
+            width:100%;
+            padding:10px;
+            border:none;
+            border-radius:8px;
+            margin-bottom:15px;
+            outline:none;
+        }
+
+        textarea{
+            resize:none;
+            height:90px;
+        }
+
+        button{
+            width:100%;
+            padding:12px;
+            border:none;
+            border-radius:20px;
+            background:white;
+            color:#f25c54;
+            font-size:15px;
+            cursor:pointer;
+            transition:0.3s;
+        }
+
+        button:hover{
+            background:#ffe0db;
+        }
+
+        a{
+            text-decoration:none;
+            background:white;
+            color:#f25c54;
+            padding:10px 20px;
+            border-radius:20px;
+            font-size:14px;
+            transition:0.3s;
+            display:inline-block;
+            margin-top:10px;
+        }
+
+        a:hover{
+            background:#ffe0db;
+        }
+    </style>
 </head>
+
 <body>
-    <h1>Contact Me</h1>
 
-    <form action="#" method="post">
-        <label>Name:</label><br>
-        <input type="text"><br><br>
+    <div class="card">
+        <h1>Contact Me</h1>
 
-        <label>Email:</label><br>
-        <input type="email"><br><br>
+        <form action="#" method="post">
+            <label>Name</label>
+            <input type="text" placeholder="Enter your name">
 
-        <label>Message:</label><br>
-        <textarea></textarea><br><br>
+            <label>Email</label>
+            <input type="email" placeholder="Enter your email">
 
-        <button type="submit">Send</button>
-    </form>
+            <label>Message</label>
+            <textarea placeholder="Your message"></textarea>
 
-    <br>
-    <a href="index.html">⬅ Back</a>
+            <button type="submit">Send</button>
+        </form>
+
+        <a href="index.html">⬅ Back</a>
+    </div>
+
 </body>
 </html>
